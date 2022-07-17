@@ -6,5 +6,5 @@ interface IProps {
 }
 
 export const Badge = ({ color, text }: IProps) => {
-  return <p className={`badge bg-${color} col m-0`}>{text}</p>;
+  return <p className={`badge bg-${color} col-2 m-0`}>{text}</p>;
 };
