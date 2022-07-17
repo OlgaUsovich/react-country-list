@@ -1,3 +1,5 @@
+import countries from "../country-data.json";
+
 export interface ICountry {
   name: string;
   capital: string;
@@ -19,3 +21,5 @@ export enum Color {
 }
 
 export type BadgeLabel = "area" | "population";
+
+export type CountryApi = typeof countries;
