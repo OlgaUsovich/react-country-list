@@ -1,10 +1,11 @@
-import { Color } from "../types";
+import { BadgeLabel, Color } from "../types";
 
 interface IProps {
+  label: BadgeLabel;
+  value: number;
   color: Color;
-  text: string;
 }
 
-export const Badge = ({ color, text }: IProps) => {
-  return <p className={`badge bg-${color} col-2 m-0`}>{text}</p>;
+export const Badge = ({ color, label, value }: IProps) => {
+  return <p className={`badge bg-${color} col-2 m-0`}>{`${label}: ${value}`}</p>;
 };
