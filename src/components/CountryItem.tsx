@@ -12,8 +12,8 @@ export const CountryItem = ({ country }: IProps) => {
     <p className="col-3 m-0">{country.name}</p>
     <p className="col m-0">{country.capital}</p>
     <p className="col m-0">{country.region}</p>
-    <Badge color={Color.primary} text={`area: ${country.area}`} />
-    <Badge color={Color.secondary} text={`population: ${country.population}`} />
+    <Badge color={Color.Primary} text={`area: ${country.area}`} />
+    <Badge color={Color.Secondary} text={`population: ${country.population}`} />
     </li>
   );
 };

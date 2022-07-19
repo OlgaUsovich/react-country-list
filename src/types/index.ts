@@ -16,14 +16,14 @@ export interface ICountry {
 }
 
 export enum Color {
-  primary = "primary",
-  secondary = "secondary",
-  success = "success",
-  danger = "danger",
-  warning = "warning",
-  info = "info",
-  light = "light",
-  dark = "dark",
+  Primary = "primary",
+  Secondary = "secondary",
+  Success = "success",
+  Danger = "danger",
+  Warning = "warning",
+  Info = "info",
+  Light = "light",
+  Dark = "dark",
 }
 
 export type BadgeLabel = "area" | "population";
