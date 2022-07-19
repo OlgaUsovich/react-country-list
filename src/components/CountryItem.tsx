@@ -1,13 +1,11 @@
 import { Color, ICountry } from "../types";
 import { Badge } from "./Badge";
 
-interface Iprops {
+interface IProps {
   country: ICountry;
 }
 
-// const imageStyle = { width: 80 };
-
-export const CountryItem = ({ country }: Iprops) => {
+export const CountryItem = ({ country }: IProps) => {
   return (
     <li className="list-group-item row d-flex align-items-center gap-3">
     <img className="col-1 p-0" src={country.flag} alt="Flag" />
