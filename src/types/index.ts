@@ -1,8 +1,27 @@
+interface ICountryNativeNameApi {
+  [key: string]:
+    | {
+        common: string;
+        official: string;
+      }
+    | undefined;
+}
+
+interface ICountryNameApi {
+  common: string;
+  official: string;
+  nativeName: ICountryNativeNameApi;
+}
+
+interface ICountryFlagsApi {
+  [key: string]: string;
+}
+
 export interface ICountryApi {
-  name: { common: string };
+  name: ICountryNameApi;
   capital: string[];
   population: number;
-  flags: { svg: string };
+  flags: ICountryFlagsApi;
   area: number;
   region: string;
 }
